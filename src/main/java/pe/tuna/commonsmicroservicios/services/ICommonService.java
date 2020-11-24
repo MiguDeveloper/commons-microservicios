@@ -1,0 +1,10 @@
+package pe.tuna.commonsmicroservicios.services;
+
+import java.util.List;
+
+public interface ICommonService<E> {
+    public List<E> findAll();
+    public E findById(Long id);
+    public E save(E entity);
+    public void deleteById(Long id);
+}
